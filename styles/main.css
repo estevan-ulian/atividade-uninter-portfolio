@@ -1,0 +1,325 @@
+/* Importa fonte Poppins do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* Cria variáveis globais */
+:root {
+    --primary-color: #172c3c;
+    --secondary-color: #274862;
+    --accent-color: #e6b33d;
+    --white-color: #ffffff;
+    --light-color: #d9d9d9;
+    --header-height: 6.25rem;
+}
+
+/* Cria keyframes para animações */
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Reseta estilos iniciais do browser */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Estilos do HTML e Body */
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-padding-block-end: var(--header-height);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100dvh;
+}
+
+/* Container */
+.container {
+    max-width: 52.5rem;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.container-content {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* Header */
+.header--wrapper {
+    z-index: 99;
+    margin-bottom: calc(var(--header-height) * -1);
+    animation: fadeIn 1s ease-in;
+}
+
+.header--wrapper.sticky {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
+    animation: slideFromTop 0.25s ease-in;
+    background: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.875rem;
+    height: var(--header-height);
+}
+
+.header .header--title {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: default;
+}
+
+.header .header--navigation .header--navigation_list {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header .header--navigation .header--navigation_list {
+    flex-basis: 25%;
+}
+
+.header .header--navigation .header--navigation_list a {
+    color: var(--light-color);
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+/* Section */
+.section {
+    min-height: calc(100dvh);
+    padding-top: var(--header-height);
+    scroll-snap-align: start;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    font-weight: 600;
+    width: 100%;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.section h3 {
+    font-size: 1.125rem;
+    color: var(--light-color);
+    font-weight: 600;
+}
+
+.section p {
+    font-size: 0.875rem;
+    color: var(--light-color);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.section .list-container {
+    align-self: stretch;
+    display: grid;
+    gap: 1rem;
+}
+
+.section .list-container li.list-item {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.25rem;
+    align-items: flex-start;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: default;
+}
+
+.section .list-container li.list-item > .badge {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.section .list-container li.list-item > .description {
+    font-size: 0.75rem;
+    color: var(--light-color);
+}
+
+.section .list-container li.list-item .list-wrapper-links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.section .list-container li.list-item a {
+    color: var(--accent-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.section.about-me img.hero-img {
+    width: 100%;
+    object-fit: contain;
+    height: 6rem;
+    object-position: left;
+}
+
+.section.portfolio {
+    height: auto;
+}
+
+.section.portfolio h2 {
+    margin-top: 1rem;
+}
+
+.icon-list {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5rem;
+}
+
+.icon-list li a {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+    align-items: center;
+    color: var(--light-color)
+}
+
+.icon-list li a span {
+    font-size: 0.875rem;
+}
+
+/* Tema */
+.button {
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.15s ease-in;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+.button:hover {
+    animation: pulse 0.75s ease-in infinite;
+}
+
+.button.button-accent {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.error {
+    color: #ff0033;
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+}
+
+/* Responsividade Desktop */
+@media only screen and (min-width: 40rem) {
+    .header {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .header--navigation .header--navigation_list a {
+        font-size: 1rem;
+    }
+
+    .section {
+        min-height: calc(100dvh - var(--header-height));
+    }
+
+    .section .list-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .button {
+        width: auto;
+        min-width: 12.5rem;
+        max-width: 15rem;
+    }
+}
