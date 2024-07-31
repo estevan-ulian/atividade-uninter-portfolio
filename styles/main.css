@@ -58,8 +58,6 @@ a {
 
 /* Estilos do HTML e Body */
 html {
-    scroll-behavior: smooth;
-    overflow-y: auto;
     scroll-snap-type: y mandatory;
     scroll-padding-block-end: var(--header-height);
 }
@@ -256,7 +254,7 @@ body {
     flex-flow: row nowrap;
     gap: 0.5rem;
     align-items: center;
-    color: var(--light-color)
+    color: var(--light-color);
 }
 
 .icon-list li a span {
