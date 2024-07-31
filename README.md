@@ -10,7 +10,7 @@ Para a conclusão desta atividade prática, os seguintes requisitos foram estabe
   * **Sobre mim:** Seção para descrever informações pessoais experiências.
   * **Formação:** Seção para listar a formação acadêmica e/ou certificações.
   * **Portfólio:** Seção para apresentar projetos e trabalhos anteriores.
-  * **Contato:** Seção para fornecer informações de contato e redes sociais.
+  * **Contato:** Seção com pelo menos um formulário (nome, e-mail e mensagem).
 * **Tecnologias Utilizadas:** 
   * HTML5
   * CSS3
