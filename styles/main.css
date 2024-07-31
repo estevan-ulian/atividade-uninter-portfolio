@@ -58,8 +58,9 @@ a {
 
 /* Estilos do HTML e Body */
 html {
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
     scroll-padding-block-end: var(--header-height);
 }
 
