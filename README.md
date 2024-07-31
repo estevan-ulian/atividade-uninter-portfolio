@@ -11,16 +11,12 @@ Para a conclusão desta atividade prática, os seguintes requisitos foram estabe
   * **Formação:** Seção para listar a formação acadêmica e/ou certificações.
   * **Portfólio:** Seção para apresentar projetos e trabalhos anteriores.
   * **Contato:** Seção para fornecer informações de contato e redes sociais.
-
 * **Tecnologias Utilizadas:** 
   * HTML5
   * CSS3
   * JavaScript (não permitido o uso de bibliotecas ou frameworks)
-
 * **Comentários Explicativos:** Inserir comentários no código para facilitar a compreensão das funcionalidades e estrutura.
-
 * **Hospedagem:** O site deve ser hospedado e o link disponibilizado, preferencialmente no GitHub Pages.
-
 * **Entrega no Portal do Aluno:** Subir um arquivo PDF ou DOCX contendo:
   * Prints da estrutura de pasta do projeto.
   * Nome dos arquivos utilizados no projeto com o respectivo código.
@@ -32,14 +28,11 @@ Para a conclusão desta atividade prática, os seguintes requisitos foram estabe
 O desenvolvimento deste projeto seguiu as seguintes etapas:
 
 1. **Planejamento:** Definição da estrutura e layout do portfólio, identificando as seções necessárias e o conteúdo a ser incluído.
-
 2. **Desenvolvimento:**
    * Criação da estrutura HTML5, garantindo semântica e acessibilidade.
    * Estilização com CSS3, visando um design responsivo e atraente.
    * Implementação de interatividade com JavaScript, melhorando a experiência do usuário, e requisição web.
-
 3. **Testes:** Realização de testes em diferentes navegadores e dispositivos para assegurar a compatibilidade e o funcionamento correto.
-
 4. **Hospedagem:** Publicação do site no GitHub Pages para acesso público.
 
 ## Resultados
@@ -50,7 +43,11 @@ O projeto foi concluído com sucesso, atendendo a todos os requisitos propostos.
 * Informações organizadas de forma clara e objetiva.
 * Design responsivo que se adapta a diferentes tamanhos de tela.
 
-![atividade-portfolio-uninter](https://github.com/user-attachments/assets/1d143daf-bca0-4951-bea6-b2df29fb6404)
+![atividade-portfolio-uninter](https://github.com/user-attachments/assets/1d143daf-bca0-4951-bea6-b2df29fb6404)<br>
+Visualização desktop (telas com largura a partir de 640px ou 40rem)
+
+![atividade-portfolio-uninter-mobile](https://github.com/user-attachments/assets/8c8730f0-1ccc-4a4a-a326-5797ca7dd098)<br>
+Visualização mobile (telas menores que 640px ou 40rem)
 
 O portfólio pode ser acessado através do seguinte link: [https://estevan-ulian.github.io/atividade-uninter-portfolio](https://estevan-ulian.github.io/atividade-uninter-portfolio)
 
