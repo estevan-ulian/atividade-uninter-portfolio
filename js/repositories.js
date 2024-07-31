@@ -47,14 +47,15 @@
         linkRepo.textContent = "Repositório";
         linkRepo.href = repository.html_url;
         linkRepo.target = "_blank";
-        linkProject.textContent = repository.homepage ? "Acessar site" : null;
-        linkProject.href = repository.homepage;
-        linkProject.target = "_blank";
 
+        if (repository.homepage) {
+            linkProject.textContent = "Acessar site";
+            linkProject.href = repository.homepage;
+            linkProject.target = "_blank";
+            wrapperLinks.appendChild(linkProject);
+        }
         wrapperLinks.appendChild(linkRepo);
-        wrapperLinks.appendChild(linkProject);
         wrapperLinks.classList.add("list-wrapper-links");
-
         item.classList.add("list-item");
         item.appendChild(title);
         item.appendChild(description);
