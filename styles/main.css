@@ -313,6 +313,10 @@ body {
         min-height: calc(100dvh - var(--header-height));
     }
 
+    .section.contact {
+        padding: 0;
+    }
+
     .section .list-container {
         grid-template-columns: repeat(3, 1fr);
     }
